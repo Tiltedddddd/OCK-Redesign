@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+/* Navbar styles */
+
+.navbar {
+    margin: 0;
+    padding: 0.3rem;
+    background-color: white;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+.navbar-link {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.navbar-link li{
+    list-style-type: none;
+}
+
+.navbar-link a{
+    text-decoration: none;  
+    color: black;
+}
+
+.navbar-link :hover{
+    color: gray;
+}
+
+.navbar-logo {
+    height: 4.5rem;
+    object-fit: contain;
+}
