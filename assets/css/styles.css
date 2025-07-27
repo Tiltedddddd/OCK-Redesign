@@ -27,6 +27,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 5rem;
+    font-weight: bold;
 }
 
 .navbar-link li{
@@ -45,4 +46,24 @@ body{
 .navbar-logo {
     height: 4.5rem;
     object-fit: contain;
+}
+
+/* Navbar language dropdown btn placeholder */
+.language-dropdown{
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.language-dropdown:hover{
+    background-color: gray;
+}
+
+.hero-banner {
+    height: 550px;
+    background-color: gray;
 }
