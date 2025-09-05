@@ -7,15 +7,18 @@
     <title>Old Chang Kee</title>
     <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
+        <div class="mobile-nav">
+            <span class="material-symbols-outlined hamburger" onclick="openNav()">menu</span>
+            <a href="#"><img class="miniLogo" src="assets/images/logo.png" alt="miniLogo"></a>
+        </div>
+        
         <ul class="navbar-link">
             <li><a href="#">Home</a></li>
             <li><a href="#">Promotions</a></li>
@@ -27,6 +30,18 @@
         </ul>
         <button class="language-btn">EN</button>
     </nav>
+
+    <!-- Sidebar nav -->
+     <nav class="sideNav" id="sideNav">
+        <a href="javascript:void(0)" class="sideNavCloseBtn" onclick="closeNav()">&times;</a>
+        <a href="#">Promotions</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">About Us</a>
+        <a href="#">Franchise</a>
+        <a href="#">Locator</a>
+     </nav>
+
+   
 
     <!-- Hero image section -->
     <section class="hero-section">
@@ -42,8 +57,6 @@
 
 
     <!-- Snacks preview -->
-<p>lalalalaalskdfsfljslfdjskljdfklsdjdlfjsljfksjf</p>
-<h1>testing</h1>
 
     <!-- Franchise CTA -->
 
