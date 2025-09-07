@@ -116,26 +116,27 @@ body{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
-    background-color: #2c2c2c;
+    background-color: #F2BB4C;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
 }
 
+
 .sideNav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #e9cd51;
+  color: #000000;
   display: block;
   transition: 0.3s;
 }
 
 .sideNav a:hover {
-    color: #caa337;
+    color: #ffd35b;
 }
 
 .sideNav .sideNavCloseBtn {
@@ -144,6 +145,17 @@ body{
     right: 25px;
     font-style: 36px;
     margin-left: 50px;
+}
+
+.sideNavOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.674); /* semi-transparent black */
+  z-index: 0; /* updated dynamically via JS */
+  display: none;
 }
 
 /* Responsiveness meida queries for sideNav */
