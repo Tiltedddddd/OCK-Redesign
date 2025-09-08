@@ -167,8 +167,22 @@ body{
 
 /* Hero Banner */
 
-.hero-banner {
-    height: 550px;
-    background-color: gray;
-}
+.hero-img {
+    background-image: url("../images/HeroImage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 520px;
+    width: 100%;
+    position: relative; /*For stacking - Hero img on bottom -> Overlay ontop -> Text and btn on top*/
+}   
 
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* black overlay */
+    z-index: 1;
+}
