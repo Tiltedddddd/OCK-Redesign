@@ -2,7 +2,7 @@
 function openNav() {
   document.getElementById("sideNav").style.width = "250px";
   document.getElementById("sideNavOverlay").style.display = "block";
-  document.getElementById("sideNavOverlay").style.zIndex = "1";
+  document.getElementById("sideNavOverlay").style.zIndex = "9";
 
   // Disable page scrolling when sideNav is open  
   document.body.style.overflow = "hidden";
