@@ -14,10 +14,15 @@ body{
 /* Navbar styles */
 
 .navbar {
+    position: sticky;
+    top: 0;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
 }
 
 .navbar-link {
@@ -174,7 +179,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 520px;
+    height: 560px;
     width: 100%;
     position: relative; /*For stacking - Hero img on bottom -> Overlay ontop -> Text and btn on top*/
 
@@ -254,3 +259,24 @@ body{
     max-width: 100%;
   }
 }
+
+
+/* Snacks section */
+.snacks-section {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    background-color: #000000;
+}
+
+.snacks-header {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.snacks-header p {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  display: inline-block;
+}
+
