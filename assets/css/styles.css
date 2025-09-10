@@ -7,8 +7,8 @@
 
 body{
     min-height: 100vh;
-    background-color: rgb(65, 65, 65);
-    color: #F2BB4C;
+    background-color:#F2BB4C;
+    color: White;
 }
 
 /* Navbar styles */
@@ -329,11 +329,36 @@ body{
     100% {transform: translateX(0);}
 }
 
+/* Snacks CTA button */
+.snack-cta {
+    display: flex;
+    padding: 20px 80px;
+    border-radius: 2rem;
+    border-style: none;
+    font-size: large;
+    background-color: #F2BB4C;
+    transition: 50ms;
+    cursor: pointer;
+}
+
+.snack-cta a {
+    color: white;
+    text-decoration: none;
+}
+
+.snack-cta:hover {
+    background-color: #ffaa00;
+    transition: 0.5s;
+}
 
 
+/* FRANCHISE SECTION */
+.snack-cta-container {
+  margin-top: 4rem;   /* space between carousel and button */
+  display: flex;
+  justify-content: center; /* center horizontally */
+}
 
-
-.franchise {
-    background-color: #ffffff;
-    height: 600px;
+.franchise-section {
+    height: 400px;
 }
