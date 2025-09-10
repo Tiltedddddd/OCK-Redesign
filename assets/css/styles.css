@@ -264,7 +264,8 @@ body{
 /* Snacks section */
 .snacks-section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: 400px;
     background-color: #000000;
 }
@@ -284,4 +285,49 @@ body{
   text-decoration: underline;
   display: inline-block;
 }
+
+/* Carousell area */
+.snack-carousel {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 3rem;
+    flex: 0 0 100%;
+}
+
+
+.snack {
+    width: 150px;
+    height: 150px;
+    margin: 0 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.snack img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.snack-track {
+    display: flex;  
+    gap: 1rem;
+    padding-right: 20px;
+    /* Animation code */
+    will-change: transform;
+    animation: scroll 10s linear infinite;
+}
+
+.snack-carousel:hover .snack-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
+
+
 
