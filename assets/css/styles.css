@@ -351,14 +351,21 @@ body{
     transition: 0.5s;
 }
 
-
-/* FRANCHISE SECTION */
 .snack-cta-container {
-  margin-top: 4rem;   /* space between carousel and button */
+  margin-top: 4rem;   
   display: flex;
-  justify-content: center; /* center horizontally */
+  justify-content: center; /* horizontally */
 }
 
 .franchise-section {
+    display: flex;
     height: 400px;
+}
+
+.franchise-header {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    font-size: 4rem;
+    text-decoration: underline;
 }
