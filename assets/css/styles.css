@@ -357,15 +357,28 @@ body{
   justify-content: center; /* horizontally */
 }
 
+/*|-----------------------| */
+/*|   Franchise section   | */
+/* ------------------------ */
+
 .franchise-section {
     display: flex;
-    height: 400px;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #6c6c6c;
+    padding-bottom: 250px;
+}
+
+.franchise-cta-btn {
+    padding: 10px 20px;
+    border-radius: 2rem;
+    border-style: none;
+    background-color: #ffaa00;
 }
 
 .franchise-header {
     margin-top: 2rem;
     margin-left: 2rem;
-    display: flex;
-    font-size: 4rem;
     text-decoration: underline;
+    font-size: 2rem;
 }
